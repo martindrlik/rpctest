@@ -18,7 +18,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	err = client.Call("Server.Touch", nil, nil)
+	err = client.Call("Server.Touch", struct{}{}, &struct{}{})
 	if err != nil {
 		log.Fatal(err)
 	}
